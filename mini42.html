@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Quiz Helper</title>
+    <link rel="stylesheet" href="mini42.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧠 Quiz Helper</h1>
+        <p class="subtitle">Learn something new with Gemini AI!</p>
+
+        <label for="topic">Enter Your Topic</label>
+        <input
+            type="text"
+            id="topic"
+            placeholder="Example: JavaScript, Photosynthesis..."
+        >
+
+        <button id="generateBtn">Generate Quiz ✨</button>
+
+        <p id="status" aria-live="polite"></p>
+
+        <div id="quizBox" class="quiz-box" hidden>
+            <h2>Your Quiz Question</h2>
+            <p id="question"></p>
+
+            <button id="showAnswerBtn" class="answer-btn">
+                Show Answer
+            </button>
+
+            <div id="answerBox" hidden>
+                <h3>Correct Answer</h3>
+                <p id="answer"></p>
+                <h3>Explanation</h3>
+                <p id="explanation"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="mini42.js"></script>
+</body>
+</html>

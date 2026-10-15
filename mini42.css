@@ -1,0 +1,141 @@
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #c084fc, #f9a8d4, #a5b4fc);
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(88, 28, 135, 0.22);
+}
+
+h1 {
+    color: #7e22ce;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e9d5ff;
+    border-radius: 12px;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+input:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 3px #f3e8ff;
+}
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #9333ea, #ec4899);
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px #d8b4fe;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#status {
+    color: #9333ea;
+    font-size: 14px;
+    margin: 18px 0;
+}
+
+.quiz-box {
+    margin-top: 20px;
+    padding: 22px;
+    background: linear-gradient(135deg, #f3e8ff, #fce7f3);
+    border-radius: 18px;
+    text-align: left;
+}
+
+.quiz-box h2 {
+    color: #7e22ce;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#question {
+    color: #4c1d95;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+#answerBox {
+    background: #ffffff;
+    padding: 18px;
+    margin-top: 18px;
+    border-radius: 12px;
+}
+
+#answer {
+    color: #15803d;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#explanation {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+```
